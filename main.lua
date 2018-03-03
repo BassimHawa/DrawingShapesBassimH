@@ -18,20 +18,20 @@ display.setStatusBar(display.HiddenStatusBar)
 local roundedRect = display.newRoundedRect( 120, 50, 200, 50, 10 )
 roundedRect.path.radius = 20
 
---anchor the rounded reectangle in the top left corner
+--anchor the rounded rectangle in the top left corner
 roundedRect.anchorX = 0
 roundedRect.anchorY = 0
 roundedRect.x = 20
 roundedRect.y = 20
 
 --set the width of the border
-roundedRect.strokeWidth = 10
+roundedRect.strokeWidth = 8
 
 --set the color of the rounded rectangle
 roundedRect:setFillColor(0.5, 0.5, 1)
 
 --set the color of the border of the rounded rectangle
-roundedRect:setStrokeColor(1, 0.5, 0)
+roundedRect:setStrokeColor(0, 0, 0)
 
 --write the name of the rounded rectangle under the rounded rectangle
 areaText = display.newText("Rounded Rectangle", 0, 0, Arial, textSize)
@@ -42,14 +42,67 @@ areaText.anchorY = 0
 areaText.x = 20
 areaText.y = 90
 
---create a triangle using lines
-local triangle = display.newLine(200, 90, 227, 165 )
-triangle:append(173,165, 200,90 )
-triangle:setStrokeColor( 1, 0, 0, 1 )
+--set the text color
+areaText:setTextColor(0.5, 0.5, 1)
+
+--create a triangle 
+local tri_vert = {0,4*10, 3*10,-3*10, -3*10,-3*10} 
+local triangle = display.newPolygon(175,175, tri_vert)
+
+--set the color of the triangle
+triangle:setFillColor(1, 1, 0)
+
+--set the color of the border of the triangle
+triangle:setStrokeColor( 0, 0, 0 )
+
+--set the size of the border of the triangle
 triangle.strokeWidth = 8
 
---anchor the traiangle in the top left corner
+--anchor the triangle in the top right corner
 triangle.anchorX = 0
 triangle.anchorY = 0
-triangle.x = 400
-triangle.y =20
+triangle.x = 360
+triangle.y =15
+
+--write the name of the triangle under the triangle
+areaText = display.newText("Triangle", 0, 0, Arial, textSize)
+
+--anchor the text and set its (x,y) position
+areaText.anchorX = 0
+areaText.anchorY = 0
+areaText.x = 350
+areaText.y = 100
+
+--set the text color
+areaText:setTextColor(1, 1, 0)
+
+--create a hexagon
+local hex_vert = {-2 * 15,3 * 15, 2 * 15,3 * 15, 4* 15,0, 2 * 15,-3 * 15,-2 * 15,-3* 15,-4 * 15,0} 
+local hexagon = display.newPolygon(175,175, hex_vert)
+
+--anchor the hexagon in the bottom/middle
+hexagon.anchorX = 0
+hexagon.anchorY = 0
+hexagon.x = 175
+hexagon.y =175
+
+--set the color of the hexagon
+hexagon:setFillColor(1, 0, 0)
+
+--set the color of the border of the hexagon
+hexagon:setStrokeColor(0, 0, 0)
+
+--set the width of the border of the hexagon
+hexagon.strokeWidth = 8
+
+--write the name of the hexagon under the hexagon
+areaText = display.newText("Hexagon", 0, 0, Arial, textSize)
+
+--anchor the text and set its (x,y) position
+areaText.anchorX = 0
+areaText.anchorY = 0
+areaText.x = 190
+areaText.y = 275
+
+--set the text color
+areaText:setTextColor(1, 0, 0)
