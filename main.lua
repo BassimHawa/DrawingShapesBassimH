@@ -9,7 +9,7 @@ local textSize = 25
 local areaText
 
 --set the background color of my screen
-display.setDefault("background", 0/255, 100/255, 0/255)
+display.setDefault("background", 0/255, 100/255, 10/255)
 
 --to remove status bar
 display.setStatusBar(display.HiddenStatusBar)
@@ -27,8 +27,8 @@ roundedRect.y = 20
 --set the width of the border
 roundedRect.strokeWidth = 8
 
---set the color of the rounded rectangle
-roundedRect:setFillColor(0.5, 0.5, 1)
+--put a picture of the desert in the rounded rectangle
+roundedRect.fill = { type="image", filename="desert.jpg" }
 
 --set the color of the border of the rounded rectangle
 roundedRect:setStrokeColor(0, 0, 0)
@@ -46,11 +46,11 @@ areaText.y = 90
 areaText:setTextColor(0.5, 0.5, 1)
 
 --create a triangle 
-local tri_vert = {0,4*10, 3*10,-3*10, -3*10,-3*10} 
-local triangle = display.newPolygon(175,175, tri_vert)
+local tri_vert = {0,4*15, 3*15,-3*15, -3*15,-3*15} 
+local triangle = display.newPolygon(175,5, tri_vert)
 
---set the color of the triangle
-triangle:setFillColor(1, 1, 0)
+--put a picture of cheese in the triangle
+triangle.fill = { type="image", filename="cheese.jpg" }
 
 --set the color of the border of the triangle
 triangle:setStrokeColor( 0, 0, 0 )
@@ -61,8 +61,8 @@ triangle.strokeWidth = 8
 --anchor the triangle in the top right corner
 triangle.anchorX = 0
 triangle.anchorY = 0
-triangle.x = 360
-triangle.y =15
+triangle.x = 320
+triangle.y =5
 
 --write the name of the triangle under the triangle
 areaText = display.newText("Triangle", 0, 0, Arial, textSize)
@@ -70,8 +70,8 @@ areaText = display.newText("Triangle", 0, 0, Arial, textSize)
 --anchor the text and set its (x,y) position
 areaText.anchorX = 0
 areaText.anchorY = 0
-areaText.x = 350
-areaText.y = 100
+areaText.x = 330
+areaText.y = 120
 
 --set the text color
 areaText:setTextColor(1, 1, 0)
@@ -86,8 +86,8 @@ hexagon.anchorY = 0
 hexagon.x = 175
 hexagon.y =175
 
---set the color of the hexagon
-hexagon:setFillColor(1, 0, 0)
+--put a picture of the ocean in the hexagon
+hexagon.fill = { type="image", filename="ocean2.jpg" }
 
 --set the color of the border of the hexagon
 hexagon:setStrokeColor(0, 0, 0)
@@ -106,3 +106,5 @@ areaText.y = 275
 
 --set the text color
 areaText:setTextColor(1, 0, 0)
+
+
