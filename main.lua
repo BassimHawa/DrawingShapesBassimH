@@ -71,7 +71,7 @@ areaText = display.newText("Triangle", 0, 0, Arial, textSize)
 areaText.anchorX = 0
 areaText.anchorY = 0
 areaText.x = 330
-areaText.y = 120
+areaText.y = 110
 
 --set the text color
 areaText:setTextColor(1, 1, 0)
