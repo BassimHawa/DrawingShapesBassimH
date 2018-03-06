@@ -28,7 +28,11 @@ roundedRect.y = 20
 roundedRect.strokeWidth = 8
 
 --put a picture of the desert in the rounded rectangle
+<<<<<<< HEAD
 roundedRect.fill = { type="image", filename="images/desert.jpg" }
+=======
+roundedRect.fill = { type="image", filename="Images/desert.jpg" }
+>>>>>>> 3d0968e96f7f4d65ad0484cb33086b68521eb000
 
 --set the color of the border of the rounded rectangle
 roundedRect:setStrokeColor(0, 0, 0)
@@ -50,7 +54,11 @@ local tri_vert = {0,4*15, 3*15,-3*15, -3*15,-3*15}
 local triangle = display.newPolygon(175,5, tri_vert)
 
 --put a picture of cheese in the triangle
+<<<<<<< HEAD
 triangle.fill = { type="image", filename="images/cheese.jpg" }
+=======
+triangle.fill = { type="image", filename="Images/cheese.jpg" }
+>>>>>>> 3d0968e96f7f4d65ad0484cb33086b68521eb000
 
 --set the color of the border of the triangle
 triangle:setStrokeColor( 0, 0, 0 )
@@ -61,8 +69,8 @@ triangle.strokeWidth = 8
 --anchor the triangle in the top right corner
 triangle.anchorX = 0
 triangle.anchorY = 0
-triangle.x = 320
-triangle.y =5
+triangle.x = 420
+triangle.y =100
 
 --write the name of the triangle under the triangle
 areaText = display.newText("Triangle", 0, 0, Arial, textSize)
@@ -71,10 +79,13 @@ areaText = display.newText("Triangle", 0, 0, Arial, textSize)
 areaText.anchorX = 0
 areaText.anchorY = 0
 areaText.x = 330
-areaText.y = 120
+areaText.y = 110
 
 --set the text color
 areaText:setTextColor(1, 1, 0)
+
+--rotate the triangle
+triangle:rotate(180)
 
 --create a hexagon
 local hex_vert = {-2 * 15,3 * 15, 2 * 15,3 * 15, 4* 15,0, 2 * 15,-3 * 15,-2 * 15,-3* 15,-4 * 15,0} 
@@ -87,7 +98,11 @@ hexagon.x = 175
 hexagon.y =175
 
 --put a picture of the ocean in the hexagon
+<<<<<<< HEAD
 hexagon.fill = { type="image", filename="images/ocean2.jpg" }
+=======
+hexagon.fill = { type="image", filename="Images/ocean2.jpg" }
+>>>>>>> 3d0968e96f7f4d65ad0484cb33086b68521eb000
 
 --set the color of the border of the hexagon
 hexagon:setStrokeColor(0, 0, 0)
