@@ -28,11 +28,7 @@ roundedRect.y = 20
 roundedRect.strokeWidth = 8
 
 --put a picture of the desert in the rounded rectangle
-<<<<<<< HEAD
 roundedRect.fill = { type="image", filename="images/desert.jpg" }
-=======
-roundedRect.fill = { type="image", filename="Images/desert.jpg" }
->>>>>>> 3d0968e96f7f4d65ad0484cb33086b68521eb000
 
 --set the color of the border of the rounded rectangle
 roundedRect:setStrokeColor(0, 0, 0)
@@ -54,11 +50,7 @@ local tri_vert = {0,4*15, 3*15,-3*15, -3*15,-3*15}
 local triangle = display.newPolygon(175,5, tri_vert)
 
 --put a picture of cheese in the triangle
-<<<<<<< HEAD
 triangle.fill = { type="image", filename="images/cheese.jpg" }
-=======
-triangle.fill = { type="image", filename="Images/cheese.jpg" }
->>>>>>> 3d0968e96f7f4d65ad0484cb33086b68521eb000
 
 --set the color of the border of the triangle
 triangle:setStrokeColor( 0, 0, 0 )
@@ -98,11 +90,7 @@ hexagon.x = 175
 hexagon.y =175
 
 --put a picture of the ocean in the hexagon
-<<<<<<< HEAD
 hexagon.fill = { type="image", filename="images/ocean2.jpg" }
-=======
-hexagon.fill = { type="image", filename="Images/ocean2.jpg" }
->>>>>>> 3d0968e96f7f4d65ad0484cb33086b68521eb000
 
 --set the color of the border of the hexagon
 hexagon:setStrokeColor(0, 0, 0)
